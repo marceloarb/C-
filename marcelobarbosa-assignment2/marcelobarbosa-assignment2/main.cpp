@@ -6,20 +6,21 @@
 //
 
 #include <iostream>
-#include "Square.cpp"
 using namespace std;
+
 
 
 
 int main(int argc, const char * argv[]) {
     
-    Square square;
-    float number;
-    float areaSquare;
-    cout << "Enter a Number: ";
-    cin >> number;
-    areaSquare = square.calculateSquareArea(number);
-    cout << "Area of the square is: " << areaSquare << endl;
+    Circle circle;
+
+    int result;
+    result = circle.calculateCircleArea(20);
+    std::cout << "Hello, World!\n";
+    std::cout << "Hello\n";
+    cout << "Total value is :" << result << endl;
+    return 0;
 }
 
 
