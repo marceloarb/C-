@@ -6,15 +6,12 @@
 //
 
 #include <iostream>
-#include "Square.cpp"
 using namespace std;
 
 
 
 
 int main(int argc, const char * argv[]) {
-//    Instantiate object
-    Square square;
     
 //    Declaring variable to store input number
     float number;
@@ -28,8 +25,8 @@ int main(int argc, const char * argv[]) {
     //Get the number from the user
     cin >> number;
     
-    //Calling object method to calculate square area
-    areaSquare = square.calculateSquareArea(number);
+    //calculate square area
+    areaSquare = number * number;
     
     //Output the calculated area
     cout << "Area of the square is: " << areaSquare << endl;
