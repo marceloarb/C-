@@ -28,6 +28,8 @@ int main(int argc, const char * argv[]) {
     
     //calculate square area
     areaSquare = number * number;
+    
+    //calculate circle area
     areaCircle = number * number * 3.14;
 
     cout << fixed << showpoint << setprecision(2);
@@ -35,34 +37,41 @@ int main(int argc, const char * argv[]) {
     cout << "The areas of the shapes are: " << "\n";
     
     //Output Horizontal line
-    cout << setw(10) << left << setfill('-') << "-"
-    << setw(9) << left << setfill('-') << "-"
+    cout << setw(23) << left << setfill('-') << "-"
     <<"\n";
     
     
     //Output the header of the table
     cout << "|" << setw(10) << left << setfill(' ') << "Shape"
     << "|"
-    << setw(9) << left << setfill(' ') << "Area"
-    << "|"
-    <<"\n";
-    
-    //Output unused columns with '_'
-    cout << "|" << setw(10) << left << setfill(' ') << "Square"
-    << "|"
-    << setw(9) << right << setfill('_') << areaSquare
-    << "|"
-    <<"\n";
-    
-    cout << "|" << setw(10) << left << setfill(' ') << "Circle"
-    << "|"
-    << setw(9) << right << setfill('_') << areaCircle
+    << setw(10) << right << setfill(' ') << "Area"
     << "|"
     <<"\n";
     
     //Output Horizontal line
-    cout << setw(10) << left << setfill('-') << "-"
-    << setw(9) << left << setfill('-') << "-"
+    cout << setw(23) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output Area of the square
+    cout << "|" << setw(10) << left << setfill(' ') << "Square"
+    << "|"
+    << setw(10) << right << setfill('_') << areaSquare
+    << "|"
+    <<"\n";
+    
+    //Output Horizontal line
+    cout << setw(23) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output Area of the circle
+    cout << "|" << setw(10) << left << setfill(' ') << "Circle"
+    << "|"
+    << setw(10) << right << setfill('_') << areaCircle
+    << "|"
+    <<"\n";
+    
+    //Output Horizontal line
+    cout << setw(23) << left << setfill('-') << "-"
     <<"\n";
   
     
