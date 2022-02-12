@@ -26,14 +26,16 @@ int main(int argc, const char * argv[]) {
     //Get the number from the user
     cin >> number;
     
-    //calculate square area
+    //Calculate square area
     areaSquare = number * number;
     
-    //calculate circle area
+    //Calculate circle area
     areaCircle = number * number * 3.14;
 
+    //Format the floating points numbers
     cout << fixed << showpoint << setprecision(2);
 
+    //Output the message
     cout << "The areas of the shapes are: " << "\n";
     
     //Output Horizontal line
