@@ -14,7 +14,9 @@ int main(int argc, const char * argv[]) {
     
     //Declaring variable
     int subjectNumber;
+    int rubricNumber;
     string subjectName;
+    string rubricName;
     
     //Output Horizontal line
     cout << setw(50) << left << setfill('-') << "-"
@@ -65,6 +67,50 @@ int main(int argc, const char * argv[]) {
         subjectName = "Computer Information Technology";
         cout << "You have selected " << subjectName;
     }
+    
+    cout << "\n" << "\n" ;
+    
+    //Output Horizontal line
+    cout << setw(50) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output the header of the table
+    cout << setw(27) << right << setfill(' ') << "RUBRIC"
+    <<"\n"
+    << setw(50) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output first row option
+    cout << setw(2) << right << setfill(' ') << 1
+    << setw(5) << right << setfill(' ') << "|"
+    << setw(8) << right << setfill(' ') << "COSC"
+    << "\n"
+    << setw(50) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output second row option
+    cout << setw(2) << right << setfill(' ') << 2
+    << setw(5) << right << setfill(' ') << "|"
+    << setw(8) << right << setfill(' ') << "BCIS"
+    << "\n"
+    << setw(50) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output third row option
+    cout << setw(2) << right << setfill(' ') << 3
+    << setw(5) << right << setfill(' ') << "|"
+    << setw(8) << right << setfill(' ') << "ITSC"
+    << "\n"
+    << setw(50) << left << setfill('-') << "-"
+    <<"\n";
+    
+    //Output fourth row option
+    cout << setw(2) << right << setfill(' ') << 4
+    << setw(5) << right << setfill(' ') << "|"
+    << setw(8) << right << setfill(' ') << "ITSE"
+    << "\n"
+    << setw(50) << left << setfill('-') << "-"
+    <<"\n";
 
     cout << "\n";
     return 0;
