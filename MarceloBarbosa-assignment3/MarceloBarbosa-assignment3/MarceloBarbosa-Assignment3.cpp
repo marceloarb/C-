@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     cout << "Enter a Number: ";
     
     //Get the number from the user
-    cin >> number;
+    cin >> number >> number;
     
     //Calculate square area
     areaSquare = number * number;
@@ -75,7 +75,17 @@ int main(int argc, const char * argv[]) {
     //Output Horizontal line
     cout << setw(23) << left << setfill('-') << "-"
     <<"\n";
-  
+
+    
+    int beta;
+    int alpha;
+    char ch1;
+    char ch2;
+    cin.get(ch1);
+    cin.get(ch2);
+    cin >> alpha;
+    cout << ch1 << ch2, alpha;
+    endif(beta=0);
     
     return 0;
 

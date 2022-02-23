@@ -13,23 +13,12 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-//    Declaring variable to store input number
-    float number;
+    int ch1 = 5;
+    int ch2 = 10;
+    ch1 *=ch2;
+    cout << ch1;
+   
     
-    //    Declaring variable to store the result
-    float areaSquare;
-    
-//    Prompt the user to enter a number
-    cout << "Enter a Number: ";
-    
-    //Get the number from the user
-    cin >> number;
-    
-    //calculate square area
-    areaSquare = number * number;
-    
-    //Output the calculated area
-    cout << "Area of the square is: " << areaSquare << endl;
     return 0;
 }
 
