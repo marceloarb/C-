@@ -12,12 +12,16 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
+    //Declaring variable
+    int subjectNumber;
+    string subjectName;
+    
     //Output Horizontal line
     cout << setw(50) << left << setfill('-') << "-"
     <<"\n";
     
     //Output the header of the table
-    cout << setw(22) << right << setfill(' ') << "SUBJECT"
+    cout << setw(28) << right << setfill(' ') << "SUBJECT"
     <<"\n"
     << setw(50) << left << setfill('-') << "-"
     <<"\n";
@@ -46,6 +50,22 @@ int main(int argc, const char * argv[]) {
     << setw(50) << left << setfill('-') << "-"
     <<"\n";
     
+    cout << "Select an option: ";
+    cin >> subjectNumber;
     
+    if(subjectNumber == 1){
+        subjectName = "Computer Science";
+        cout << "You have selected " << subjectName;
+    }
+    else if(subjectNumber == 2){
+        subjectName = "Business Computer Applications";
+        cout << "You have selected " << subjectName;
+    }
+    else if(subjectNumber == 3){
+        subjectName = "Computer Information Technology";
+        cout << "You have selected " << subjectName;
+    }
+
+    cout << "\n";
     return 0;
 }
