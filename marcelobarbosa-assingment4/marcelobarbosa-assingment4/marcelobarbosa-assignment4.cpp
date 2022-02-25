@@ -309,11 +309,12 @@ int main(int argc, const char * argv[]) {
     //output message
     cout << "You are now registered for the "
     << subjectName
-    << ", course "
+    << "course "
     << rubricName
     << "-"
     << courseName
     << "-"
+    
     << sectionName
     << "!";
 
