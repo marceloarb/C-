@@ -12,54 +12,65 @@
 using namespace std;
 int main(int argc, const char * argv[]) {
     ifstream inFile;
-    ofstream outFile;
     inFile.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/Data.txt");
+    ofstream outFile;
     string name;
     float testScore1;
     float testScore2;
     float testScore3;
-    float sum;
-    string grade;
-    if (!inFile)
-    {
-    cout << "Cannot open input file. Program terminates!\n"; return 1;
-    }
+    float totalPoints;
+    float numericGrade;
+    string letterGrade;
     
+    if (!inFile){
+        cout << "Cannot open input file. Program terminates!\n"; return 1;
+    }
     outFile.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/Data.out");
 
     outFile << fixed << showpoint << setprecision(2);
-
+    
     inFile >> name;  //read the name
     inFile >> testScore1;
     inFile >> testScore2;
-    inFile >> testScore3;   //read the test score
-//    outFile << name << testScore;
-    while (sum < 10){
-//        sum = sum + testScore; //update sum
-        sum++;
-//        switch (static_cast<int> (testScore) / 10){
-//        case 5:
-//            grade = 'F';
-//            break;
-//        case 6:
-//            grade = 'D';
-//            break;
-//        case 7:
-//                grade = 'C';
-//            break;
-//        case 8:
-//            grade = 'B';
-//            break;
-//        case 10: grade = 'A';
-//            break;
-//        default: cout << "Invalid score." << endl;
-
+    inFile >> testScore3;
+    
+    while(inFile){
+        cout << "oi";
+        totalPoints = testScore1 + testScore2 + testScore3;
+        numericGrade = totalPoints/2; //update sum
+        switch (static_cast<int> (totalPoints) / 3){
+            case 5:
+                letterGrade = 'F';
+                break;
+            case 6:
+                letterGrade = 'D';
+                break;
+            case 7:
+                letterGrade = 'C';
+                break;
+            case 8:
+                letterGrade = 'B';
+                break;
+            case 10: letterGrade = 'A';
+                break;
+            default: cout << "Invalid score." << endl;
+                
+        
+                
         outFile << left << setw(12) << name
         << setw(12) << testScore1
         << setw(12) << testScore2
-        << setw(12) << testScore3 << endl;
+        << setw(12) << testScore3
+        << setw(12) << totalPoints
+        << setw(12) << numericGrade
+        << setw(12) << letterGrade << endl;
+                
+        inFile >> name;  //read the name
+        inFile >> testScore1;
+        inFile >> testScore2;
+        inFile >> testScore3;
 
-//       }
+       }
     }
     inFile.close();
     outFile.close();
