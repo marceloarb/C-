@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94A0D89C27D4446800E1CF1B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94A0D89B27D4446800E1CF1B /* main.cpp */; };
+		94A0D89C27D4446800E1CF1B /* marcelobarbosa-assignment5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94A0D89B27D4446800E1CF1B /* marcelobarbosa-assignment5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,7 @@
 
 /* Begin PBXFileReference section */
 		94A0D89827D4446800E1CF1B /* marcelobarbosa-assignment5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "marcelobarbosa-assignment5"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A0D89B27D4446800E1CF1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		94A0D8A227D444DA00E1CF1B /* Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Data.txt; path = ../../../Assignment5/Data.txt; sourceTree = "<group>"; };
+		94A0D89B27D4446800E1CF1B /* marcelobarbosa-assignment5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "marcelobarbosa-assignment5.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +57,7 @@
 		94A0D89A27D4446800E1CF1B /* marcelobarbosa-assignment5 */ = {
 			isa = PBXGroup;
 			children = (
-				94A0D89B27D4446800E1CF1B /* main.cpp */,
-				94A0D8A227D444DA00E1CF1B /* Data.txt */,
+				94A0D89B27D4446800E1CF1B /* marcelobarbosa-assignment5.cpp */,
 			);
 			path = "marcelobarbosa-assignment5";
 			sourceTree = "<group>";
@@ -121,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A0D89C27D4446800E1CF1B /* main.cpp in Sources */,
+				94A0D89C27D4446800E1CF1B /* marcelobarbosa-assignment5.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

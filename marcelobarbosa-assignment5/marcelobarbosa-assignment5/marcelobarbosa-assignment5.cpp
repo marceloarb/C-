@@ -22,8 +22,8 @@ int main(int argc, const char * argv[]) {
     float totalPoints;
     float numericGrade;
     string letterGrade;
-    int numberStudents;
-    float averageNumericGrade;
+    int numberStudents = 0;
+    float averageNumericGrade = 0;
     
     //Opening Data file
     inFile.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/Data.txt");
@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
     
     //Initializing Output file.
     outFile.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/Data.out");
-    outFileClassStatistic.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/ClassStatic.out");
+    outFileClassStatistic.open("/Users/marcelobarbosa/Desktop/ProgrammingFundamentals1/Assignment5/ClassStatistic.out");
     
     //Setting output file format
     outFile << fixed << showpoint << setprecision(2);
