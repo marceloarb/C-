@@ -29,15 +29,13 @@ int function1(){
     return n;
 }
 // Declaring function and functionality
-void function2(int n){
+void function2(int &n){
     //Output message
     cout << "Enter an integral number that will be used as reference parameter: ";
     
     //Prompt user for option number
     cin >> n;
     
-    //Calling function
-    function4(n);
 }
 // Declaring function and functionality
 int function3(int m){
@@ -101,18 +99,21 @@ void function5(int m,int n){
 
 int main(int argc, const char * argv[]) {
     //Declaring variable
-    int n1;
+    int n1 = 0;
     int n2 = 0;
-    int n3;
+    int n3 = 0;
     
     //Assigning function to variable.
     n1 = function1();
     
-    //Calling function
+    //Calling function to print number
     function4(n1);
     
     //Calling function
     function2(n2);
+    
+    //Calling function to print number
+    function4(n2);
     
     //Assigning value to variable
     n2 = 20;
@@ -120,11 +121,11 @@ int main(int argc, const char * argv[]) {
     //Assigning function to variable.
     n3 = function3(n2);
     
-    //Calling function
+    //Calling function to print number
     function4(n3);
     
     //Calling function
-    function5(10, 5);
+    function5(n2, n3);
     
     
     return 0;
